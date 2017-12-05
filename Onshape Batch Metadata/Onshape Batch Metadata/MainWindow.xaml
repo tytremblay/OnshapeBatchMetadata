@@ -1,0 +1,36 @@
+﻿<Window x:Class="Onshape_Batch_Metadata.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Onshape_Batch_Metadata"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Text="DocumentId" Grid.Column="0" Grid.Row="0"></TextBlock>
+        <TextBlock Text="WorkspaceId" Grid.Column="0" Grid.Row="1"></TextBlock>
+        <TextBlock Text="ElementId" Grid.Column="0" Grid.Row="2"></TextBlock>
+        <TextBlock Text="PartId" Grid.Column="0" Grid.Row="3"></TextBlock>
+        <TextBlock Text="Name" Grid.Column="0" Grid.Row="4"></TextBlock>
+        <TextBox x:Name="DocumentIdTextBox" Grid.Column="1" Grid.Row="0">e220dd37e81d8d31b5e1ddf1</TextBox>
+        <TextBox x:Name="WorkspaceIdTextBox" Grid.Column="1" Grid.Row="1">4500d0e87d224efbdec72870</TextBox>
+        <TextBox x:Name="ElementIdTextBox" Grid.Column="1" Grid.Row="2">50f7fc1db4a178c9ea8daabe</TextBox>
+        <TextBox x:Name="PartIdTextBox" Grid.Column="1" Grid.Row="3">JHD</TextBox>
+        <TextBox x:Name="NameTextBox" Grid.Column="1" Grid.Row="4"></TextBox>
+        <Button x:Name="GetButton" Margin="0 5" Grid.Column="1" Grid.Row="5" Click="GetButton_Click">GET</Button>
+        <Button x:Name="SetButton" Margin="0 5" Grid.Column="1" Grid.Row="6" Click="SetButton_Click">SET</Button>
+    </Grid>
+</Window>
